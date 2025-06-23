@@ -18,9 +18,9 @@
     "webpack-config-single-spa": "^5.3.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --port 3000",
+    "start": "webpack serve --config webpack.config.js",
     "start:standalone": "webpack serve --env standalone",
-    "build": "concurrently npm:build:*",
+    "build": "webpack --config webpack.config.js --mode production",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src --ext js",

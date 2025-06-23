@@ -15,6 +15,9 @@ module.exports = async (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
+    output: {
+      publicPath: "/react-header/",
+    },
     // modify the webpack config however you'd like to by adding to this object
   });
 };
