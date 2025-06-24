@@ -16,7 +16,6 @@ module.exports = async (webpackConfigEnv, argv) => {
 
   return merge(defaultConfig, {
     output: {
-      filename: "main.js",           // 👈 Rename the file
       publicPath: "/",               // Adjust if deployed to subpath
     },
     // modify the webpack config however you'd like to by adding to this object
